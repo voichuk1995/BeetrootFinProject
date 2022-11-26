@@ -1,0 +1,65 @@
+.testimon{
+    &__img{
+        max-height: 550px;
+        height: 100%;
+    }
+
+    &__content{
+        position: absolute;
+        top: 0;
+        padding-top: 130px;
+    }
+
+    &__title{
+        font-size: 45px;
+        color: rgb(255, 255, 255);
+        font-family: "Raleway";
+        position: relative;
+        margin: 0;
+        margin-bottom: 100px;
+
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 110px;
+            height: 3px;
+            background: #e2574c;
+        }
+    }
+
+    &__text{
+        font-size: 24px;
+        font-family: "Raleway";
+        line-height: 1.5;
+        text-align: center;
+        max-width: 700px;
+        width: 100%;
+        transform: translateX(50%);
+        padding-bottom: 40px;
+    }
+
+    &__coment{
+        font-size: 20px;
+        font-family: "PlayfairDisplay";
+        line-height: 1.35;
+        text-align: center;
+    }
+
+    &__indicator{
+        bottom: 0;
+        margin: 0;
+    }
+
+    &__testimon__dotted{
+        width: 12px!important;
+        height: 12px!important;
+        background-color: transparent!important;
+        border-radius: 50%!important;
+        border: 2px solid #FFFFFF!important;
+        margin: 0 5px!important;
+    }
+}
+  

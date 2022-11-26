@@ -1,0 +1,83 @@
+.blog {
+    padding: 70px 0 120px;
+
+    &__nav-first {
+        @extend .nav-first;
+    }
+
+    &__nav-last {
+        @extend .nav-last;
+    }
+
+    &__cartlist{
+        padding: 0 50px 50px 12px;
+        border-right: 1px solid rgb(240, 244, 245);
+    }
+
+    &__cart {
+        max-width: 730px;
+        width: 100%;
+        border-bottom: 1px solid rgb(240, 244, 245);
+        padding-bottom: 50px;
+        margin-bottom: 60px;
+
+        &:last-child{
+            margin-bottom: 50px;
+        }
+    }
+
+    &__title {
+        font-size: 45px;
+        font-family: "Raleway";
+        color: rgb(60, 60, 60);
+        margin-bottom: 40px;
+    }
+
+    &__image {
+        max-width: 730px;
+        width: 100%;
+        border-radius: 4px;
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        font-size: 16px;
+        color: rgb(121, 121, 121);
+        margin-bottom: 40px;
+    }
+
+    &__button {
+        border-radius: 3px;
+        background-color: rgb(226, 87, 76);
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-family: "Raleway";
+        font-weight: bold;
+        border: none;
+        padding: 15px 25px;
+    }      
+
+    &__filter {
+        padding-left: 50px;
+        font-family: "Raleway";
+    }
+
+    &__categories{
+        font-size: 20px;
+        color: rgb(60, 60, 60);
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+
+    &__list {
+        list-style: none;
+        font-size: 16px;
+        color: rgb(121, 121, 121);
+        padding: 0;
+    }
+
+    &__item {
+        margin-bottom: 17px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,29 @@
+.nav-first{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 50px;
+    color: #e2574c;
+    font-family: "Raleway";
+    margin-right: 20px;
+    position: relative;
+
+    &::before{
+        content: "";
+        position: absolute;
+        background-image: url("/src/assets/images/aboutUs/arrow.png");
+        width: 9px;
+        height: 5px;
+        right: -15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.nav-last{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 50px;
+    color: #3c3c3c;
+    font-weight: bolder;
+    font-family: "Raleway";
+}

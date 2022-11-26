@@ -1,0 +1,25 @@
+.feauters{
+    padding: 100px 0;
+    background-color: $greyLight;
+    text-align: center;
+
+    &__icon{
+        width: 25px;
+        height: 25px;
+    }
+
+    &__title{
+        font-family: "Raleway";
+        font-size: 20px;
+        font-weight: bold;
+        margin: 25px 0 ;
+    }
+
+    &__text{
+        font-size: 14px;
+    }
+
+    &__col{
+        padding: 0 20px;
+    }
+}

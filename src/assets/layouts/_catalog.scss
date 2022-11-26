@@ -1,0 +1,115 @@
+.catalog{
+    text-align: center;
+    padding: 70px 0 120px;
+
+    &__nav-first{
+        @extend .nav-first;
+    }
+
+    &__nav-last{
+        @extend .nav-last;
+    }
+
+    &__title{
+        font-size: 45px;
+        font-family: "Raleway";
+        color: rgb(60, 60, 60);
+        margin-bottom: 60px;
+    }
+
+    &__list{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0 auto 80px;
+        max-width: 525px;
+        width: 100%;
+
+    }
+    
+    &__item{
+        display: inline-block;
+        font-size: 16px;
+        font-family: "Raleway";
+        color: rgb(60, 60, 60);
+        font-weight: bold;
+
+        &.active{
+            color: $grey4;
+            border-bottom: 2px solid #ff0000;
+        }
+    }
+}
+
+.product{
+    border: 1px solid $grey3;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 30px;
+
+    &__img {
+        width: 100%;
+		padding-bottom: 40px;
+    }      
+
+    &__title {
+        font-size: 26px;
+        font-family: "Raleway";
+        color: rgb(60, 60, 60);
+        padding-bottom: 20px;
+        margin: 0;
+    }
+
+    &__subtitle {
+        font-size: 15px;
+        padding-bottom: 25px;
+        color: $grey4;
+        margin: 0;
+    }
+
+    &__price {
+        padding-bottom: 30px;
+		font-weight: bold;
+		color: $red;
+		font-family: "Helvetica";
+        margin: 0;
+    }
+
+    &__description {
+        list-style: none;
+		padding-left: 0;
+		margin-bottom: 0;
+        display: flex;
+		justify-content: center;
+		padding: 15px 0;
+		border-top: 1px solid $grey3;
+		font-size: 13px;
+		font-weight: bold;
+        font-family: "Helvetica";
+    }
+
+    &__item {
+        color: rgb(121, 121, 121);
+        padding-right: 15px;
+		position: relative;
+
+		&:after {
+			content: '';
+			position: absolute;
+			right: 5px;
+			top: 59%;
+			transform: translateY(-50%);
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			background-color: $grey4;
+		}
+
+		&:last-child {
+			&::after {
+				content: none;
+			}
+		}
+    }
+}

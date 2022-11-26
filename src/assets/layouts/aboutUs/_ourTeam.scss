@@ -1,0 +1,57 @@
+.team{
+    padding: 100px 0;
+
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    &__title{
+        display: inline-block;
+        font-size: 37px;
+        font-family: "Raleway";
+        line-height: 1.8; 
+    }
+
+    &__faq{
+        display: inline-block;
+        font-size: 20px;
+        color: rgb(226, 87, 76);
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover{
+            color: rgb(193, 121, 116);
+        }
+    }
+}
+
+.person{
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 3px;
+    text-align: center;
+    padding-bottom: 30px;
+
+    &__image{
+        width: 100%;
+    }
+
+    &__name{
+        font-size: 20px;
+        font-family: "Raleway";
+        font-weight: bold;
+        color: #000000;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    &__text{
+        margin: 0;
+    }
+}
+
+
+  
+  

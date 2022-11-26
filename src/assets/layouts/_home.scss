@@ -1,0 +1,47 @@
+.home{
+    p{
+        margin: 0;
+    }
+
+    &__slider{
+        box-sizing: border-box;
+        max-height: 550px;
+        height: 100%;
+    }
+
+    &__started{
+        background-color: $grey;
+        padding: 45px 0;
+    }
+
+    &__testimon{
+        max-height: 575px;
+        box-sizing: border-box;
+    }
+}
+
+.offering{
+    padding: 125px 0;
+    position: relative;
+
+    &__title{
+        font-size: 37px;
+        color: $dark;
+        text-align: right;
+        font-weight: 500;
+    }
+
+    &__border{
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 12px;
+            width: 30px;
+            height: 3px;
+            background-color: $dark;
+        }
+    }
+}

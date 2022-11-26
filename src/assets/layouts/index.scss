@@ -1,0 +1,38 @@
+@import "./fonts";
+@import "./colors";
+@import "./extend";
+@import "./base";
+@import "./footer";
+
+// pages & components
+
+@import "./home";
+@import "./offering";
+@import "./feauters";
+@import "./properties";
+@import "./slider-agents";
+@import "./started";
+@import "./testimon";
+@import "./partners";
+
+// about us
+
+@import "./aboutUs/company";
+@import "./aboutUs/ourTeam";
+@import "./aboutUs/_subscribe";
+
+// property
+
+@import "./catalog";
+
+// faq
+
+@import "./faq";
+
+// blog
+
+@import "./blog";
+
+// contacts
+
+@import "./contacts";

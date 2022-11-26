@@ -1,0 +1,103 @@
+.slider-agents{
+    
+    &__title{
+        display: inline-block;
+        left: 50%;
+        transform: translate(-205px, 70px);
+        font-size: 45px;
+        position: relative;
+        z-index: 2;
+        font-family: "Raleway";
+        margin: 0;
+
+        &::before{
+            content: "";
+            position: absolute;
+            width: 110px;
+            height: 2px;
+            background-color: $red;
+            left: 0;
+            bottom: -40px;
+        }
+    }
+
+    &__indicators{
+        top: 38px;
+        left: 160px;
+    }
+
+    &__dotted{
+        width: 12px!important;
+        height: 12px!important;
+        background-color: transparent!important;
+        border-radius: 50%!important;
+        border: 2px solid $red!important;
+        margin: 0 5px!important;
+    }
+}
+
+.slider-agents__dotted.active{
+    background-color: $red!important;
+}
+
+
+.agents{
+    display: flex!important;
+    background-color: #fff;
+
+    &__img{
+        max-height: 467px;
+        height: 100%;
+        min-width: 344px;
+    }
+
+    &__content{
+        padding: 50px 0 50px 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+    }
+
+    &__title{
+        font-size: 25px;
+        font-weight: bold;
+        padding-bottom: 35px;
+        margin: 0;
+    }
+
+    &__text{
+        max-width: 750px;
+        width: 100%;
+        padding-bottom: 40px;
+        color: $grey4;
+    }
+
+    &__list{
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+    }
+
+    &__icon{
+        padding-right: 15px;
+    }
+
+    &__link{
+        padding-right: 30px;
+        text-decoration: none;
+        color: $primary;
+
+        &:hover{
+            color: $primary;
+        }
+    }
+
+    &__link-red{
+        color: $red;
+
+        &:hover{
+            color: $red;
+        }
+    }
+}
