@@ -1,13 +1,13 @@
 <template>
    <div class="contacts">
         <div class="container">
-            <a href="" class="contacts__nav-first">Home</a>
-            <a href="" class="contacts__nav-last">About Us</a>
+            <router-link class="contacts__nav-first" aria-current="page" :to="headerMenuList[0].path">Home</router-link>
+            <router-link class="contacts__nav-last" aria-current="page" :to="headerMenuList[1].path">About Us</router-link>
             <h3 class="contacts__title">Our <strong>Contacts</strong></h3>
             <div class="contacts__map">
-                <div class="" id="map">
+                <!-- <div class="" id="map">
                     
-                </div>
+                </div> -->
             </div>
             <div class="contacts__content row">
                 <div class="info col-md-4">
@@ -45,11 +45,17 @@
 
 <script>
 import VoichukComment from "../components/VoichukComment.vue";
+import { menuList } from "../constants/menuLinks";
 
 export default {
     name: "VoichukContacts",
     components: {
         VoichukComment,
+    },
+    data() {
+        return {
+            headerMenuList: menuList,
+        }
     },
 }
 </script>

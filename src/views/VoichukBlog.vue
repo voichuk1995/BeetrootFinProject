@@ -1,17 +1,10 @@
 <template>
     <div class="blog">
         <div class="container">
-            <a href="#" class="blog__nav-first">Home</a>
-            <a href="#" class="blog__nav-last">Blog</a>
+            <router-link class="blog__nav-first" aria-current="page" :to="headerMenuList[0].path">Home</router-link>
+            <router-link class="blog__nav-last" aria-current="page" :to="headerMenuList[3].path">Blog</router-link>
             <div class="row">
-                <div class="col-md-8 blog__cartlist">
-                    <div v-for="(item, index) in propertiesData.slice(0,3)" :key="index" class="blog__cart">
-                        <h2 class="blog__title">{{ item.title }}</h2>
-                        <img :src="require(`../assets/images/propertis${item.image}`)" :alt="item.title" class="blog__image">
-                        <p class="blog__text">{{ item.text }}</p>
-                        <button class="blog__button">Read More</button>
-                    </div>
-                </div>
+                <VoichukBlogCatalog :propertiesData="items"/>
                 <div class="col-md-4 blog__filter">
                     <h3 class="blog__categories">Categories</h3>
                     <ul class="blog__list">
@@ -32,19 +25,48 @@
                         <li class="blog__item">July 2022</li>
                     </ul>
                 </div>
+                <Paginate 
+                    v-model="page"
+                    :page-count="pageCount"
+                    :page-range="3"
+                    :click-handler="pageChangeHandler"
+                    :container-class="'pagination-blog'"
+                    :page-class="'page-item'"
+                    :page-link-class="'page-item-link'"
+                    :prev-class="'page-item-arrow-none'"
+                    :next-class="'page-item-arrow-none'"
+                />
             </div>
         </div>
     </div>
 </template>
 
 <script>
+import VoichukBlogCatalog from "../components/VoichukBlogCatalog.vue";
 import { propertiesData } from "../data/data.all";
+import paginationBlogMixin from "../assets/mixins/pagination.blog.mixin";
+import Paginate from "../../node_modules/vuejs-paginate/src/components/Paginate.vue";
+import { menuList } from "../constants/menuLinks";
 
 export default {
+    name: "VoichukBlog",
+    components: {
+        VoichukBlogCatalog,
+        Paginate
+    },
+    mixins: [paginationBlogMixin],
     data() {
         return {
             propertiesData: propertiesData,
+            headerMenuList: menuList,
         }
+    },
+    async mounted() {
+        this.setupPagination(this.propertiesData.map(product => {
+            return {
+                ...product
+            }
+        }))
     },
 }
 </script>

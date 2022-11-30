@@ -184,6 +184,57 @@ export const propertiesData = [
         dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? 
         Impedit, sed?`,
     },
+    {
+        id: 10,
+        image: "1.png",
+        title: "1450 Cloudcroft Drop",
+        subtitle: "Illinois / Chicago",
+        price: 250,
+        description: {
+            sqft: 3400,
+            room: 2,
+            bathroom: 1, 
+        },
+        text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. 
+        Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, 
+        dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? 
+        Impedit, sed?`,
+    },
+    {
+        id: 11,
+        image: "1.png",
+        title: "1450 Cloudcroft Drop",
+        subtitle: "Illinois / Chicago",
+        price: 250,
+        description: {
+            sqft: 3400,
+            room: 2,
+            bathroom: 1, 
+        },
+        text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. 
+        Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, 
+        dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? 
+        Impedit, sed?`,
+    },
+    {
+        id: 12,
+        image: "1.png",
+        title: "1450 Cloudcroft Drop",
+        subtitle: "Illinois / Chicago",
+        price: 250,
+        description: {
+            sqft: 3400,
+            room: 2,
+            bathroom: 1, 
+        },
+        text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. 
+        Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, 
+        dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? 
+        Impedit, sed?`,
+    },
 ];
 
 export const teamData = [
@@ -214,7 +265,7 @@ export const teamData = [
 ];
 
 
-// 5aLKRUWZHQB8UVcXDqolJt3k1YqLAJmsowWf9X7s
+// 5aLKRUWZHQB8UVcXDqolJt3k1YqLAJmsowWf9X7s ria key
 
 
 // AIzaSyDHvOBq1e7ODHAPBWZSqpq45rqjmTyXTyU key maps

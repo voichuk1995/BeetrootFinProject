@@ -1,6 +1,6 @@
 <template>
     <div class="about">
-        <VoichukOurCompany />
+        <VoichukOurCompany :headerMenuList="headerMenuList"/>
     </div>
     <VoichukFeauters :data="feautersData"/>
     <VoichukOurTeam :teamData="teamData"/>
@@ -9,6 +9,7 @@
 
 <script>
 import { feautersData, teamData } from "../data/data.all";
+import { menuList } from "../constants/menuLinks";
 
 import VoichukOurCompany from "../components/AboutUs/VoichukOurCompany.vue"
 import VoichukFeauters from "../components/VoichukFeauters.vue"
@@ -27,6 +28,7 @@ export default {
         return {
             feautersData: feautersData,
             teamData: teamData,
+            headerMenuList: menuList,
         }
     }  
 }

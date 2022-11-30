@@ -1,31 +1,31 @@
 <template>
 	<nav class="navbar navbar-expand-lg navbar-light p-0">
-	<div class="container">
-		<a class="navbar-brand logo" href="/">
-			<img src="../assets/images/icons/logo.png" alt="logo">
-		</a>
-		<div class="collapse collapse-fontsize navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-			<li class="nav-item menu-link" v-for="(menu, index) in headerMenuList" :key="index">
-				<router-link class="nav-link active" aria-current="page" :to="menu.path">{{ menu.name }}</router-link>
-			</li>
-		</ul>
-		<div class="icons">
-			<a href="#" target="_blank">
-				<img src="../assets/images/icons/f.png" alt="fb">
+		<div class="container">
+			<a class="navbar-brand logo" href="/">
+				<img src="../assets/images/icons/logo.png" alt="logo">
 			</a>
-			<a href="#" target="_blank">
-				<img src="../assets/images/icons/p.png" alt="p">
-			</a>
-			<a href="#" target="_blank">
-				<img src="../assets/images/icons/inst.png" alt="inst">
-			</a> 
-			<a href="#" target="_blank">
-				<img src="../assets/images/icons/g+.png" alt="google"> 
-			</a>
+			<div class="collapse collapse-fontsize navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item menu-link" v-for="(menu, index) in headerMenuList" :key="index">
+					<router-link class="nav-link active" aria-current="page" :to="menu.path">{{ menu.name }}</router-link>
+				</li>
+			</ul>
+			<div class="icons">
+				<a href="#" target="_blank">
+					<img src="../assets/images/icons/f.png" alt="fb">
+				</a>
+				<a href="#" target="_blank">
+					<img src="../assets/images/icons/p.png" alt="p">
+				</a>
+				<a href="#" target="_blank">
+					<img src="../assets/images/icons/inst.png" alt="inst">
+				</a> 
+				<a href="#" target="_blank">
+					<img src="../assets/images/icons/g+.png" alt="google"> 
+				</a>
+			</div>
+			</div>
 		</div>
-		</div>
-	</div>
 	</nav>
 </template> 
 
@@ -50,6 +50,7 @@ export default {
 
 .navbar{
 	height: 90px;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 1, 0.2);
 }
 .navbar-nav{
 	height: 90px;

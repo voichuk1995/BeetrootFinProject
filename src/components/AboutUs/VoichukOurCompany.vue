@@ -1,8 +1,8 @@
 <template>
 <div class="company">
         <div class="container">
-            <a href="" class="company__nav-first">Home</a>
-            <a href="" class="company__nav-last">About Us</a>
+            <router-link class="company__nav-first" aria-current="page" :to="headerMenuList[0].path">Home</router-link>
+            <router-link class="company__nav-last" aria-current="page" :to="headerMenuList[1].path">About Us</router-link>
             <h2 class="company__title">About <strong>Our Company</strong></h2>
             <div class="row">
                 <div class="col-md-6">
@@ -32,3 +32,16 @@
         </div>
     </div>
 </template>
+
+<script>
+
+
+export default {
+    props: {
+        headerMenuList: {
+            type: Array,
+            default: () => [],
+        }
+    }
+}
+</script>

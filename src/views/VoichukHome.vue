@@ -32,7 +32,7 @@
                         </p>
                     </div>
                 </div>
-                <VoichukProperties :propertiesData="propertiesData"/>
+                <VoichukProperties :productList="productList"/>
             </div>
         </div>
         <div class="home__slider">
@@ -41,9 +41,6 @@
         <div class="home__started">
             <VoichukStarted />
         </div>
-        <!-- <div class="home__testimon">
-            <VoichukSliderTestimon />
-        </div> -->
         <div class="home__partners">
             <VoichukPartners />
         </div>
@@ -51,7 +48,8 @@
 </template>
 
 <script>
-import { feautersData, propertiesData } from "../data/data.all";
+import { feautersData } from "../data/data.all";
+import { mapGetters, mapActions } from "vuex";
 
 
 import VoichukCarusel from "../components/VoichukCarusel.vue";
@@ -59,7 +57,6 @@ import VoichukFeauters from "../components/VoichukFeauters.vue";
 import VoichukProperties from "../components/VoichukProperties.vue";
 import VoichukSliderAgents from "../components/VoichukSliderAgents.vue";
 import VoichukStarted from "../components/VoichukStarted.vue";
-// import VoichukSliderTestimon from "../components/VoichukSliderTestimon.vue";
 import VoichukPartners from "../components/VoichukPartners.vue";
 
 export default {
@@ -70,14 +67,21 @@ export default {
         VoichukProperties,
         VoichukSliderAgents,
         VoichukStarted,
-        // VoichukSliderTestimon,
         VoichukPartners,
     },
     data() {
         return {
             feautersData: feautersData,
-            propertiesData: propertiesData,
         }
-    }  
+    },
+    computed: {
+        ...mapGetters(["PRODUCTS"]), 
+    },
+    methods: {
+        ...mapActions(["getProductList"]), 
+    },
+    mounted() {
+        this.getProductList();
+    }
 };
 </script>

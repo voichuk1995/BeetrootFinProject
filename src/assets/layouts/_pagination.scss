@@ -1,0 +1,70 @@
+// Pagination Property
+
+.pagination {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.page-item-arrow,
+.page-item {
+    border-radius: 3px;
+    background-color: rgb(226, 87, 76);
+    padding: 20px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 50px;
+    cursor: pointer;
+    transition: all ease .4s;
+
+    &:hover{
+        background-color: rgb(228, 117, 109);
+        border: 1px solid rgb(226, 87, 76);
+    }
+}
+
+.page-item-arrow{
+    width: 110px;
+}
+
+.page-item {
+    width: 50px;
+
+    &.active{
+        background-color: rgb(250, 250, 250);
+        border: 1px solid rgb(230, 230, 230);  
+        
+        .page-item-link{
+            color: rgb(60, 60, 60);
+        }
+    }
+}
+
+.page-item-link {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Raleway";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+
+    &:hover{
+        color:rgb(255, 255, 255);
+    }
+}
+
+// Pagination Blog
+
+.pagination-blog {
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+}
+
+.page-item-arrow-none{
+    display: none;
+}

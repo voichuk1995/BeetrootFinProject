@@ -1,7 +1,7 @@
 @import "./extend";
 
 .faq {
-    padding: 70px 0 120px;
+    padding: 70px 0 100px;
 
     &__nav-first {
         @extend .nav-first;
@@ -25,12 +25,12 @@
         margin-bottom: 70px;
     }
 
-    &__box {
-       
-    }
-
     &__row{
         margin-bottom: 50px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
     }
 
 

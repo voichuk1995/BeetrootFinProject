@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
 import VoichukHome from "../views/VoichukHome.vue";
-import VoichukFAQ from "../views/VoichukFAQ.vue";
 
 const routes = [
     {
@@ -13,12 +12,13 @@ const routes = [
         name: "About",
         component: () =>
         import("../views/VoichukAbout.vue"),
-        children: {
-                path: "faq",
-                name: "FAQ",
-                component: VoichukFAQ,
-    
-            },
+    },
+    {
+        path: "/faq",
+        name: "FAQ",
+        component: () =>
+        import("../views/VoichukFAQ.vue"),
+
     },
     {
         path: "/property",
@@ -37,6 +37,12 @@ const routes = [
         name: "Contacts",
         component: () =>
         import("../views/VoichukContacts.vue"),
+    },
+    {
+        path: "/object",
+        name: "Object",
+        component: () =>
+        import("../views/VoichukObject.vue"),
     },
 ];
 

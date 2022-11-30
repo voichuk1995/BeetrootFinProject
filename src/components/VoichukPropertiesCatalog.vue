@@ -1,8 +1,7 @@
 <template>
-    <div class="catalog">
         <div class="container">
-            <a href="" class="catalog__nav-first">Home</a>
-            <a href="" class="catalog__nav-last">Property</a>
+            <router-link class="company__nav-first" aria-current="page" :to="headerMenuList[0].path">Home</router-link>
+            <router-link class="company__nav-last" aria-current="page" :to="headerMenuList[2].path">Property</router-link>
             <h3 class="catalog__title">Property <strong>Catalog</strong></h3>
             <ul class="catalog__list">
                 <li class="catalog__item active">CHICAGO</li>
@@ -30,113 +29,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="catalog__nav">
-                    
-                </div>
-                <div class="faq">
-                    <a href="" class="faq__nav-first">Home</a>
-                    <a href="" class="faq__nav-midle">About Us</a>
-                    <a href="" class="faq__nav-last">FAQ</a>
-                    <h3 class="faq__title">FAQ</h3>
-                    <div class="faq__box">
-                        <div class="faq__row">
-                            <div class="faq__item">
-                                <div class="faq__img-q">
-                                    <span>Q</span>
-                                </div>
-                                <p class="faq__text-q">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, ea. 
-                                    Laborum similique aliquid doloremque amet consectetur? 
-                                    Nobis quo dolorum adipisci ad dolor modi ut. 
-                                    Vitae, ad accusantium quis magni ratione modi ex ab libero perferendis 
-                                    laborum sunt quae nisi quasi error iusto ipsa itaque omnis. 
-                                    Eos perferendis similique beatae praesentium.
-                                </p>
-                            </div>
-                            <div class="faq__item">
-                                <div class="faq__img-a">
-                                    <span>A</span>
-                                </div>
-                                <p class="faq__text-a">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, ea. 
-                                    Laborum similique aliquid doloremque amet consectetur? 
-                                    Nobis quo dolorum adipisci ad dolor modi ut. 
-                                    Vitae, ad accusantium quis magni ratione modi ex ab libero perferendis 
-                                    laborum sunt quae nisi quasi error iusto ipsa itaque omnis. 
-                                    Eos perferendis similique beatae praesentium.
-                                </p>
-                            </div>
-                        </div>
-                         <div class="faq__row">
-                            <div class="faq__item">
-                                <div class="faq__img-q">
-                                    <span>Q</span>
-                                </div>
-                                <p class="faq__text-q">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, ea. 
-                                    Laborum similique aliquid doloremque amet consectetur? 
-                                    Nobis quo dolorum adipisci ad dolor modi ut. 
-                                    Vitae, ad accusantium quis magni ratione modi ex ab libero perferendis 
-                                    laborum sunt quae nisi quasi error iusto ipsa itaque omnis. 
-                                    Eos perferendis similique beatae praesentium.
-                                </p>
-                            </div>
-                            <div class="faq__item">
-                                <div class="faq__img-a">
-                                    <span>A</span>
-                                </div>
-                                <p class="faq__text-a">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, ea. 
-                                    Laborum similique aliquid doloremque amet consectetur? 
-                                    Nobis quo dolorum adipisci ad dolor modi ut. 
-                                    Vitae, ad accusantium quis magni ratione modi ex ab libero perferendis 
-                                    laborum sunt quae nisi quasi error iusto ipsa itaque omnis. 
-                                    Eos perferendis similique beatae praesentium.
-                                </p>
-                            </div>
-                        </div>
-                         <div class="faq__row">
-                            <div class="faq__item">
-                                <div class="faq__img-q">
-                                    <span>Q</span>
-                                </div>
-                                <p class="faq__text-q">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, ea. 
-                                    Laborum similique aliquid doloremque amet consectetur? 
-                                    Nobis quo dolorum adipisci ad dolor modi ut. 
-                                    Vitae, ad accusantium quis magni ratione modi ex ab libero perferendis 
-                                    laborum sunt quae nisi quasi error iusto ipsa itaque omnis. 
-                                    Eos perferendis similique beatae praesentium.
-                                </p>
-                            </div>
-                            <div class="faq__item">
-                                <div class="faq__img-a">
-                                    <span>A</span>
-                                </div>
-                                <p class="faq__text-a">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, ea. 
-                                    Laborum similique aliquid doloremque amet consectetur? 
-                                    Nobis quo dolorum adipisci ad dolor modi ut. 
-                                    Vitae, ad accusantium quis magni ratione modi ex ab libero perferendis 
-                                    laborum sunt quae nisi quasi error iusto ipsa itaque omnis. 
-                                    Eos perferendis similique beatae praesentium.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-    </div>
 </template>
 
 <script>
+
 export default {
     props: {
         propertiesData: {
             type: Array,
             default: () => [],
+        },
+        headerMenuList: {
+            type: Array,
+            default: () => [],
         }
-    },
+    }
 }
 </script>

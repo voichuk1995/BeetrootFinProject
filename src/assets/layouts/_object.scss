@@ -1,0 +1,10 @@
+.object{
+
+    &__nav-first {
+        @extend .nav-first;
+    }
+
+    &__nav-last {
+        @extend .nav-last;
+    }
+}

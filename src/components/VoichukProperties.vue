@@ -1,6 +1,6 @@
 <template>
     <div class="row">
-        <div class="col-md-4 col-sm-12" v-for="(item, index) in propertiesData" :key="index">
+        <div class="col-md-4 col-sm-12" v-for="(item, index) in productList" :key="index">
             <div class="properties__cart cart">
                 <img :src="require(`../assets/images/propertis${item.image}`)" :alt="item.title" class="cart__img">
                 <h4 class="cart__title">{{ item.title }}</h4>
@@ -14,18 +14,25 @@
             </div>
         </div>
         <div class="col">
-            <button type="button" class="btn btn-primary properties__more">All Properties</button>
+            <router-link class="btn btn-primary properties__more" aria-current="page" :to="headerMenuList[2].path">All Properties</router-link>
         </div>
     </div>
 </template>
 
 <script>
+import { menuList } from "../constants/menuLinks";
+
 export default {
     props: {
-        propertiesData: {
+        productList: {
             type: Array,
             default: () => [],
-        }
-    }
+        },
+    },
+    data() {
+		return {
+			headerMenuList: menuList,
+		}
+	},
 }
 </script>
