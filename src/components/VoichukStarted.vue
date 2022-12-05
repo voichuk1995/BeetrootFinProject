@@ -8,9 +8,22 @@
                 </h2>
                 </div>
                 <div class="col-md-2">
-                    <a href="#" class="started__link">MORE ABOUT US</a>
+                    <router-link class="started__link" aria-current="page" :to="headerMenuList[1].path">MORE ABOUT US</router-link>
                 </div>
             </div>
         </div>
     </div>
 </template>
+
+<script>
+
+
+export default {
+    props: {
+        headerMenuList: {
+            type: Array,
+            default: () => [],
+        }
+    }
+}
+</script>

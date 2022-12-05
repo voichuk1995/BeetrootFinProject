@@ -7,6 +7,10 @@
     margin-right: 20px;
     position: relative;
 
+    &:hover{
+        color: #e2574c;
+    }
+
     &::before{
         content: "";
         position: absolute;
@@ -26,4 +30,8 @@
     color: #3c3c3c;
     font-weight: bolder;
     font-family: "Raleway";
+
+    &:hover{
+        color: #3c3c3c;
+    }
 }

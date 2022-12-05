@@ -9,7 +9,7 @@ const PRODUCTS = [
         id: 1,
         image: "1.png",
         title: "1450 Cloudcroft Drop",
-        subtitle: "Illinois / Chicago",
+        category: "Illinois / Chicago",
         price: 250,
         description: {
             sqft: 3400,
@@ -22,7 +22,7 @@ const PRODUCTS = [
         id: 2,
         image: "2.png",
         title: "140 Small Village",
-        subtitle: "Missouri / Kansas City",
+        category: "Missouri / Kansas City",
         price: 200,
         description: {
             sqft: 3400,
@@ -35,7 +35,7 @@ const PRODUCTS = [
         id: 3,
         image: "3.png",
         title: "1250 Lake House",
-        subtitle: "Colorado / Denver",
+        category: "Colorado / Denver",
         price: 339,
         description: {
             sqft: 3400,
@@ -48,7 +48,7 @@ const PRODUCTS = [
         id: 4,
         image: "1.png",
         title: "1450 Cloudcroft Drop",
-        subtitle: "Illinois / Chicago",
+        category: "Illinois / Chicago",
         price: 250,
         description: {
             sqft: 3400,
@@ -61,7 +61,7 @@ const PRODUCTS = [
         id: 5,
         image: "2.png",
         title: "140 Small Village",
-        subtitle: "Missouri / Kansas City",
+        category: "Missouri / Kansas City",
         price: 200,
         description: {
             sqft: 3400,
@@ -74,7 +74,7 @@ const PRODUCTS = [
         id: 6,
         image: "3.png",
         title: "1250 Lake House",
-        subtitle: "Colorado / Denver",
+        category: "Colorado / Denver",
         price: 339,
         description: {
             sqft: 3400,
@@ -87,7 +87,7 @@ const PRODUCTS = [
         id: 7,
         image: "1.png",
         title: "1450 Cloudcroft Drop",
-        subtitle: "Illinois / Chicago",
+        category: "Illinois / Chicago",
         price: 250,
         description: {
             sqft: 3400,
@@ -100,7 +100,7 @@ const PRODUCTS = [
         id: 8,
         image: "2.png",
         title: "140 Small Village",
-        subtitle: "Missouri / Kansas City",
+        category: "Missouri / Kansas City",
         price: 200,
         description: {
             sqft: 3400,
@@ -113,7 +113,7 @@ const PRODUCTS = [
         id: 9,
         image: "3.png",
         title: "1250 Lake House",
-        subtitle: "Colorado / Denver",
+        category: "Colorado / Denver",
         price: 339,
         description: {
             sqft: 3400,
@@ -126,7 +126,7 @@ const PRODUCTS = [
         id: 10,
         image: "1.png",
         title: "1450 Cloudcroft Drop",
-        subtitle: "Illinois / Chicago",
+        category: "Illinois / Chicago",
         price: 250,
         description: {
             sqft: 3400,
@@ -139,7 +139,7 @@ const PRODUCTS = [
         id: 11,
         image: "2.png",
         title: "140 Small Village",
-        subtitle: "Missouri / Kansas City",
+        category: "Missouri / Kansas City",
         price: 200,
         description: {
             sqft: 3400,
@@ -152,7 +152,7 @@ const PRODUCTS = [
         id: 12,
         image: "3.png",
         title: "1250 Lake House",
-        subtitle: "Colorado / Denver",
+        category: "Colorado / Denver",
         price: 339,
         description: {
             sqft: 3400,
@@ -164,7 +164,7 @@ const PRODUCTS = [
 ]; 
 
 
-const CART = [];
+// const CART = [];
 
 const BASE_URL = "/api/";
 

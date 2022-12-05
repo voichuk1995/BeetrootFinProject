@@ -39,7 +39,7 @@
             <VoichukSliderAgents />
         </div>
         <div class="home__started">
-            <VoichukStarted />
+            <VoichukStarted :headerMenuList="headerMenuList"/>
         </div>
         <div class="home__partners">
             <VoichukPartners />
@@ -50,6 +50,7 @@
 <script>
 import { feautersData } from "../data/data.all";
 import { mapGetters, mapActions } from "vuex";
+import { menuList } from "../constants/menuLinks";
 
 
 import VoichukCarusel from "../components/VoichukCarusel.vue";
@@ -72,6 +73,7 @@ export default {
     data() {
         return {
             feautersData: feautersData,
+            headerMenuList: menuList,
         }
     },
     computed: {

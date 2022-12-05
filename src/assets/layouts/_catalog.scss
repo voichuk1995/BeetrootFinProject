@@ -34,6 +34,12 @@
         font-family: "Raleway";
         color: rgb(60, 60, 60);
         font-weight: bold;
+        cursor: pointer;
+        transition: all ease .4s;
+
+        &:hover{
+            color: red; 
+        }
 
         &.active{
             color: $grey4;

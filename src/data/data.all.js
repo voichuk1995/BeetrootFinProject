@@ -35,205 +35,352 @@ export const propertiesData = [
         id: 1,
         image: "1.png",
         title: "1450 Cloudcroft Drop",
-        subtitle: "Illinois / Chicago",
+        category: "Illinois / Chicago",
         price: 250,
         description: {
             sqft: 3400,
             room: 2,
             bathroom: 1, 
         },
-        text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. 
-        Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, 
-        dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? 
-        Impedit, sed?`,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? Impedit, sed?",
     },
     {
         id: 2,
-        image: "1.png",
-        title: "1450 Cloudcroft Drop",
-        subtitle: "Illinois / Chicago",
-        price: 250,
+        image: "2.png",
+        title: "140 Small Village",
+        category: "Missouri / Kansas City",
+        price: 200,
         description: {
             sqft: 3400,
             room: 2,
             bathroom: 1, 
         },
-        text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. 
-        Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, 
-        dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? 
-        Impedit, sed?`,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? Impedit, sed?",
     },
     {
         id: 3,
-        image: "1.png",
-        title: "1450 Cloudcroft Drop",
-        subtitle: "Illinois / Chicago",
-        price: 250,
+        image: "3.png",
+        title: "1250 Lake House",
+        category: "Colorado / Denver",
+        price: 339,
         description: {
             sqft: 3400,
             room: 2,
             bathroom: 1, 
         },
-        text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. 
-        Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, 
-        dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? 
-        Impedit, sed?`,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? Impedit, sed?",
     },
     {
         id: 4,
         image: "1.png",
         title: "1450 Cloudcroft Drop",
-        subtitle: "Illinois / Chicago",
+        category: "Illinois / Chicago",
         price: 250,
         description: {
             sqft: 3400,
             room: 2,
             bathroom: 1, 
         },
-        text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. 
-        Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, 
-        dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? 
-        Impedit, sed?`,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? Impedit, sed?",
     },
     {
         id: 5,
-        image: "1.png",
-        title: "1450 Cloudcroft Drop",
-        subtitle: "Illinois / Chicago",
-        price: 250,
+        image: "2.png",
+        title: "140 Small Village",
+        category: "Missouri / Kansas City",
+        price: 200,
         description: {
             sqft: 3400,
             room: 2,
             bathroom: 1, 
         },
-        text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. 
-        Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, 
-        dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? 
-        Impedit, sed?`,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? Impedit, sed?",
     },
     {
         id: 6,
-        image: "1.png",
-        title: "1450 Cloudcroft Drop",
-        subtitle: "Illinois / Chicago",
-        price: 250,
+        image: "3.png",
+        title: "1250 Lake House",
+        category: "Colorado / Denver",
+        price: 339,
         description: {
             sqft: 3400,
             room: 2,
             bathroom: 1, 
         },
-        text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. 
-        Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, 
-        dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? 
-        Impedit, sed?`,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? Impedit, sed?",
     },
     {
         id: 7,
         image: "1.png",
         title: "1450 Cloudcroft Drop",
-        subtitle: "Illinois / Chicago",
+        category: "Illinois / Chicago",
         price: 250,
         description: {
             sqft: 3400,
             room: 2,
             bathroom: 1, 
         },
-        text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. 
-        Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, 
-        dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? 
-        Impedit, sed?`,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? Impedit, sed?",
     },
     {
         id: 8,
-        image: "1.png",
-        title: "1450 Cloudcroft Drop",
-        subtitle: "Illinois / Chicago",
-        price: 250,
+        image: "2.png",
+        title: "140 Small Village",
+        category: "Missouri / Kansas City",
+        price: 200,
         description: {
             sqft: 3400,
             room: 2,
             bathroom: 1, 
         },
-        text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. 
-        Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, 
-        dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? 
-        Impedit, sed?`,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? Impedit, sed?",
     },
     {
         id: 9,
-        image: "1.png",
-        title: "1450 Cloudcroft Drop",
-        subtitle: "Illinois / Chicago",
-        price: 250,
+        image: "3.png",
+        title: "1250 Lake House",
+        category: "Colorado / Denver",
+        price: 339,
         description: {
             sqft: 3400,
             room: 2,
             bathroom: 1, 
         },
-        text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. 
-        Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, 
-        dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? 
-        Impedit, sed?`,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? Impedit, sed?",
     },
     {
         id: 10,
         image: "1.png",
         title: "1450 Cloudcroft Drop",
-        subtitle: "Illinois / Chicago",
+        category: "Illinois / Chicago",
         price: 250,
         description: {
             sqft: 3400,
             room: 2,
             bathroom: 1, 
         },
-        text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. 
-        Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, 
-        dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? 
-        Impedit, sed?`,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? Impedit, sed?",
     },
     {
         id: 11,
-        image: "1.png",
-        title: "1450 Cloudcroft Drop",
-        subtitle: "Illinois / Chicago",
-        price: 250,
+        image: "2.png",
+        title: "140 Small Village",
+        category: "Missouri / Kansas City",
+        price: 200,
         description: {
             sqft: 3400,
             room: 2,
             bathroom: 1, 
         },
-        text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. 
-        Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, 
-        dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? 
-        Impedit, sed?`,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? Impedit, sed?",
     },
     {
         id: 12,
+        image: "3.png",
+        title: "1250 Lake House",
+        category: "Colorado / Denver",
+        price: 339,
+        description: {
+            sqft: 3400,
+            room: 2,
+            bathroom: 1, 
+        },
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? Impedit, sed?",
+    },
+    {
+        id: 13,
         image: "1.png",
         title: "1450 Cloudcroft Drop",
-        subtitle: "Illinois / Chicago",
+        category: "Illinois / Chicago",
         price: 250,
         description: {
             sqft: 3400,
             room: 2,
             bathroom: 1, 
         },
-        text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. 
-        Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, 
-        dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? 
-        Impedit, sed?`,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? Impedit, sed?",
+    },
+    {
+        id: 14,
+        image: "2.png",
+        title: "140 Small Village",
+        category: "Missouri / Kansas City",
+        price: 200,
+        description: {
+            sqft: 3400,
+            room: 2,
+            bathroom: 1, 
+        },
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? Impedit, sed?",
+    },
+    {
+        id: 15,
+        image: "3.png",
+        title: "1250 Lake House",
+        category: "Colorado / Denver",
+        price: 339,
+        description: {
+            sqft: 3400,
+            room: 2,
+            bathroom: 1, 
+        },
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? Impedit, sed?",
+    },
+    {
+        id: 16,
+        image: "1.png",
+        title: "1450 Cloudcroft Drop",
+        category: "Illinois / Chicago",
+        price: 250,
+        description: {
+            sqft: 3400,
+            room: 2,
+            bathroom: 1, 
+        },
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? Impedit, sed?",
+    },
+    {
+        id: 17,
+        image: "2.png",
+        title: "140 Small Village",
+        category: "Missouri / Kansas City",
+        price: 200,
+        description: {
+            sqft: 3400,
+            room: 2,
+            bathroom: 1, 
+        },
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? Impedit, sed?",
+    },
+    {
+        id: 18,
+        image: "3.png",
+        title: "1250 Lake House",
+        category: "Colorado / Denver",
+        price: 339,
+        description: {
+            sqft: 3400,
+            room: 2,
+            bathroom: 1, 
+        },
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? Impedit, sed?",
+    },
+    {
+        id: 19,
+        image: "1.png",
+        title: "1450 Cloudcroft Drop",
+        category: "Illinois / Chicago",
+        price: 250,
+        description: {
+            sqft: 3400,
+            room: 2,
+            bathroom: 1, 
+        },
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? Impedit, sed?",
+    },
+    {
+        id: 20,
+        image: "2.png",
+        title: "140 Small Village",
+        category: "Missouri / Kansas City",
+        price: 200,
+        description: {
+            sqft: 3400,
+            room: 2,
+            bathroom: 1, 
+        },
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? Impedit, sed?",
+    },
+    {
+        id: 21,
+        image: "3.png",
+        title: "1250 Lake House",
+        category: "Colorado / Denver",
+        price: 339,
+        description: {
+            sqft: 3400,
+            room: 2,
+            bathroom: 1, 
+        },
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? Impedit, sed?",
+    },
+    {
+        id: 22,
+        image: "1.png",
+        title: "1450 Cloudcroft Drop",
+        category: "Illinois / Chicago",
+        price: 250,
+        description: {
+            sqft: 3400,
+            room: 2,
+            bathroom: 1, 
+        },
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? Impedit, sed?",
+    },
+    {
+        id: 23,
+        image: "2.png",
+        title: "140 Small Village",
+        category: "Missouri / Kansas City",
+        price: 200,
+        description: {
+            sqft: 3400,
+            room: 2,
+            bathroom: 1, 
+        },
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? Impedit, sed?",
+    },
+    {
+        id: 24,
+        image: "3.png",
+        title: "1250 Lake House",
+        category: "Colorado / Denver",
+        price: 339,
+        description: {
+            sqft: 3400,
+            room: 2,
+            bathroom: 1, 
+        },
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? Impedit, sed?",
+    },
+    {
+        id: 25,
+        image: "1.png",
+        title: "1450 Cloudcroft Drop",
+        category: "Illinois / Chicago",
+        price: 250,
+        description: {
+            sqft: 3400,
+            room: 2,
+            bathroom: 1, 
+        },
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? Impedit, sed?",
+    },
+    {
+        id: 26,
+        image: "2.png",
+        title: "140 Small Village",
+        category: "Missouri / Kansas City",
+        price: 200,
+        description: {
+            sqft: 3400,
+            room: 2,
+            bathroom: 1, 
+        },
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? Impedit, sed?",
+    },
+    {
+        id: 27,
+        image: "3.png",
+        title: "1250 Lake House",
+        category: "Colorado / Denver",
+        price: 339,
+        description: {
+            sqft: 3400,
+            room: 2,
+            bathroom: 1, 
+        },
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis perspiciatis quae suscipit aliquam illum nostrum, voluptatem, quasi totam deserunt autem. Mollitia laudantium id sint, doloribus, accusantium tempora iusto consectetur blanditiis earum, dicta unde in officiis nam ex ea voluptate inventore nulla architecto ratione quia molestias excepturi pariatur? Impedit, sed?",
     },
 ];
 
@@ -263,6 +410,8 @@ export const teamData = [
         position: "Account Manager",
     },
 ];
+
+export let email = [];
 
 
 // 5aLKRUWZHQB8UVcXDqolJt3k1YqLAJmsowWf9X7s ria key

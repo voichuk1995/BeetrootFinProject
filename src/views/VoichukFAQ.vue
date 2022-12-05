@@ -1,9 +1,9 @@
 <template>
     <div class="container">
         <div class="faq">
-            <a href="" class="faq__nav-first">Home</a>
-            <a href="" class="faq__nav-midle">About Us</a>
-            <a href="" class="faq__nav-last">FAQ</a>
+            <router-link class="faq__nav-first" aria-current="page" :to="headerMenuList[0].path">Home</router-link>
+            <router-link class="faq__nav-midle" aria-current="page" :to="headerMenuList[1].path">About Us</router-link>
+            <router-link class="faq__nav-last" aria-current="page" :to="headerMenuList[2].path">FAQ</router-link>
             <h3 class="faq__title">FAQ</h3>
             <div class="faq__box">
                 <div class="faq__row">
@@ -96,7 +96,14 @@
 </template>
 
 <script>
+import { menuList } from "../constants/menuLinks";
+
 export default {
     name: "VoichukFAQ",
+    data() {
+        return {
+            headerMenuList: menuList,
+        }
+    },
 }
 </script>
