@@ -1,6 +1,6 @@
 <template>
     <div class="catalog">
-        <VoichukPropertiesCatalog :propertiesData="items" :headerMenuList="headerMenuList"/>
+        <VoichukPropertiesCatalog :category="category" :sortProperties="items" :headerMenuList="headerMenuList" @sort="filterByCategory"/>
         <div class="catalog__nav">
             <Paginate 
                 v-model="page"
@@ -39,14 +39,48 @@ export default {
         return {
             propertiesData: propertiesData,
             headerMenuList: menuList,
+            category: [
+                {name: "ALL", value: "ALL"},
+                {name: "Missouri / Kansas City", value: "KANSAS CITY"},
+                {name: "Colorado / Denver", value: "DENVER"},
+                {name: "Illinois / Chicago", value: "CHICAGO"},
+            ],
         }
     },
-    async mounted() {
-        this.setupPagination(this.propertiesData.map(product => {
+    computed: {
+        sortProperties() {
+            if (this.items.length) {
+
+                return this.items; 
+                 
+            } else {
+                return this.propertiesData
+            }
+        },
+    },
+    methods: {
+        filterByCategory(category){
+            this.items = [];
+            
+            this.propertiesData.map((item) => {
+
+                if (item.category === category){
+                    this.items.push(item);      
+                }
+            });
+            
+            // if (this.items.length) {
+            //     this.sortProperties;
+            // }
+            //не заходить ще раз в сорт і не обновлює айтемс
+        },
+    },
+    mounted() {
+        this.setupPagination(this.sortProperties.map(product => {
             return {
                 ...product
             }
         }))
-    },
+    }, 
 }
 </script>

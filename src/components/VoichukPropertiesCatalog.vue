@@ -4,7 +4,7 @@
             <router-link class="catalog__nav-last" aria-current="page" :to="headerMenuList[2].path">Property</router-link>
             <h3 class="catalog__title">Property <strong>Catalog</strong></h3>
             <ul class="catalog__list">
-                <li v-for="(item) in category" :key="item.value" class="catalog__item" v-on:click="filterByCategory(item.name)">{{ item.value }}</li>
+                <li v-for="(item) in category" :key="item.value" class="catalog__item" @click="$emit('sort', item.name)">{{ item.value }}</li>
             </ul>
             <div class="catalog__container">
                 <div class="row">
@@ -34,45 +34,23 @@
 export default {
     data() {
         return {
-            category: [
-                {name: "ALL", value: "ALL"},
-                {name: "Missouri / Kansas City", value: "KANSAS CITY"},
-                {name: "Colorado / Denver", value: "DENVER"},
-                {name: "Illinois / Chicago", value: "CHICAGO"},
-            ],
-            filterProperties: [],
+            
         }
     },
     props: {
-        propertiesData: {
+        category: {
             type: Array,
             default: () => [],
         },
         headerMenuList: {
             type: Array,
             default: () => [],
-        }
-    },
-    computed: {
-        sortProperties() {
-            if (this.filterProperties.length) {
-                return this.filterProperties
-            } else {
-                return this.propertiesData
-            }
+        },
+        sortProperties: {
+            type: Array,
+            default: () => [],
         },
     },
-    methods: {
-        filterByCategory(category){
-            this.filterProperties = [];
-
-            this.propertiesData.map((item) => {
-                 
-                if (item.category === category){
-                    this.filterProperties.push(item);   
-                }
-            });
-        },
-    }
+    
 }
 </script>
