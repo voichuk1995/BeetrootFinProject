@@ -411,7 +411,6 @@ export const teamData = [
     },
 ];
 
-export let email = [];
 
 
 // 5aLKRUWZHQB8UVcXDqolJt3k1YqLAJmsowWf9X7s ria key

@@ -5,7 +5,7 @@
                 <VoichukFooterIcons />
                 <VoichukFooterNavigation :footerMenuList = "footerMenuList" />
                 <VoichukFooterClients :footerMenuClients = "footerMenuClients" />
-                <VoichukFooterContact />
+                <VoichukFooterContact :footerMenuList = "footerMenuList" />
             </div>
         </div>
     </footer>

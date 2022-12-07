@@ -26,3 +26,9 @@ export default {
     },
 }
 </script>
+
+<style lang="scss">
+    main{
+        padding-top: 90px;
+    }
+</style>

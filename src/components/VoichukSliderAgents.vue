@@ -27,7 +27,7 @@
                                     <ul class="agents__list">
                                         <li>
                                             <img src="../assets/images/sliderAgents/telephone.png" alt="" class="agents__icon">
-                                            <a href="#" class="agents__link">+&lpar;380&rpar;66-66-66-666</a>
+                                            <a href="tel:+380666666666" class="agents__link">+&lpar;380&rpar;66-66-66-666</a>
                                         </li>
                                         <li>
                                             <img src="../assets/images/sliderAgents/email.png" alt="" class="agents__icon">
@@ -53,7 +53,7 @@
                                     <ul class="agents__list">
                                         <li>
                                             <img src="../assets/images/sliderAgents/telephone.png" alt="" class="agents__icon">
-                                            <a href="#" class="agents__link">+&lpar;380&rpar;66-66-66-666</a>
+                                            <a href="tel:+380666666666" class="agents__link">+&lpar;380&rpar;66-66-66-666</a>
                                         </li>
                                         <li>
                                             <img src="../assets/images/sliderAgents/email.png" alt="" class="agents__icon">
@@ -79,7 +79,7 @@
                                 <ul class="agents__list">
                                     <li>
                                         <img src="../assets/images/sliderAgents/telephone.png" alt="" class="agents__icon">
-                                        <a href="#" class="agents__link">+&lpar;380&rpar;66-66-66-666</a>
+                                        <a href="tel:+380666666666" class="agents__link">+&lpar;380&rpar;66-66-66-666</a>
                                     </li>
                                     <li>
                                         <img src="../assets/images/sliderAgents/email.png" alt="" class="agents__icon">
@@ -104,9 +104,3 @@
         </div>
     </div>
 </template>
-
-<script>
-export default {
-    
-}
-</script>

@@ -59,6 +59,11 @@
     &__link{
         color: #FFFFFF;
         text-decoration: none;
+        transition: all ease .4s;
+
+        &:hover{
+            color: $grey4;
+        }
         
 
         &_red{

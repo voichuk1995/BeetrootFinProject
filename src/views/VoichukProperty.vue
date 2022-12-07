@@ -69,11 +69,6 @@ export default {
                     this.items.push(item);      
                 }
             });
-            
-            // if (this.items.length) {
-            //     this.sortProperties;
-            // }
-            //не заходить ще раз в сорт і не обновлює айтемс
         },
     },
     mounted() {

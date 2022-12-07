@@ -8,37 +8,43 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../assets/images/slide.jpg" class="d-block w-100" alt="">
+                <img src="../assets/images/propertis3.png" class="d-block w-100" alt="">
                 <div class="carousel-caption d-none d-md-block">
                     <h5 class="hero__title">120 Anastasia Avenue, Coral Gables</h5>
                     <div class="hero__content">
                         <p class="hero__text">$625,000</p>
-                        <a href="#" class="hero__link">MORE INFO</a>
+                        <router-link class="hero__link" aria-current="page" :to="headerMenuList[2].path">MORE INFO</router-link>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="../assets/images/slide.jpg" class="d-block w-100" alt="">
+                <img src="../assets/images/propertis2.png" class="d-block w-100" alt="">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5 class="hero__title">120 Anastasia Avenue, Coral Gables</h5>
-                    <p class="hero__text">$625,000</p>
-                    <a href="#" class="hero__link">MORE INFO</a>
+                    <h5 class="hero__title">140 Small Village, Coral Gables</h5>
+                    <div class="hero__content">
+                        <p class="hero__text">$200,000</p>
+                        <router-link class="hero__link" aria-current="page" :to="headerMenuList[2].path">MORE INFO</router-link>
+                    </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="../assets/images/slide.jpg" class="d-block w-100" alt="">
+                <img src="../assets/images/propertis1.png" class="d-block w-100" alt="">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5 class="hero__title">120 Anastasia Avenue, Coral Gables</h5>
-                    <p class="hero__text">$625,000</p>
-                    <a href="#" class="hero__link">MORE INFO</a>
+                    <h5 class="hero__title">1250 Lake House, Coral Gables</h5>
+                    <div class="hero__content">
+                        <p class="hero__text">$339,000</p>
+                        <router-link class="hero__link" aria-current="page" :to="headerMenuList[2].path">MORE INFO</router-link>
+                    </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="../assets/images/slide.jpg" class="d-block w-100" alt="">
+                <img src="../assets/images/propertis3.png" class="d-block w-100" alt="">
                 <div class="carousel-caption d-none d-md-block">
                     <h5 class="hero__title">120 Anastasia Avenue, Coral Gables</h5>
-                    <p class="hero__text">$625,000</p>
-                    <a href="#" class="hero__link">MORE INFO</a>
+                    <div class="hero__content">
+                        <p class="hero__text">$625,000</p>
+                        <router-link class="hero__link" aria-current="page" :to="headerMenuList[2].path">MORE INFO</router-link>
+                    </div>
                 </div>
             </div>
         </div>
@@ -52,6 +58,18 @@
         </button>
     </div>
 </template>
+
+<script>
+import { menuList } from "../constants/menuLinks";
+
+export default {
+    data() {
+        return {
+            headerMenuList: menuList,
+        }
+    },
+}
+</script>
 
 <style lang="scss">
 .carusel-button{
