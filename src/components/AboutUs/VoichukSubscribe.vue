@@ -1,25 +1,27 @@
 <template>
     <div class="subscribe">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                <h2 class="subscribe__title">
-                    Subscribe To <strong>Our Newsletter</strong>
-                </h2>
+            <div class="row subscribe__content">
+                <div class="col-12">
+                    <h2 class="subscribe__title">
+                        Subscribe To <strong>Our Newsletter</strong>
+                    </h2>
                 </div>
-                <div class="col-md-6">
+                <div class="col-12">
                     <!-- <input type="email" class="subscribe__email" placeholder="Your email..."> -->
 
 
-                    <!-- <input 
+                    <input 
                         class="subscribe__email"
-                        placeholder="Enter your email" 
+                        placeholder="Your email..." 
                         v-model="email" 
                         required 
                         type="email"
                     >
-                    <button v-on:click="onSubmit()" class="subscribe__link">SUBSCRIBE</button> -->
                 </div> 
+                <div class="col-12">
+                    <button v-on:click="onSubmit()" class="subscribe__link">SUBSCRIBE</button>
+                </div>
             </div>
         </div>
     </div>

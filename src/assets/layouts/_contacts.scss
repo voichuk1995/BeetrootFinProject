@@ -52,7 +52,18 @@
             background-color: rgb(226, 87, 76);
             color: rgb(255, 255, 255);
         }
-    }     
+
+        @media screen and (max-width: 576px){
+            margin: 0 10px;
+        }
+    }  
+    
+    @media screen and (max-width: 768px){
+        padding: 50px 0 80px;
+    }
+    @media screen and (max-width: 576px){
+        text-align: center;
+    }
 
 }  
   
@@ -71,6 +82,10 @@
         color: rgb(121, 121, 121);
         text-align: left;
         margin: 35px 0; 
+
+        @media screen and (max-width: 576px){
+            text-align: center;
+        }
     }
 
     &__address {
@@ -79,6 +94,10 @@
         font-weight: bold;
         text-align: left;
         margin-bottom: 25px;
+
+        @media screen and (max-width: 576px){
+            text-align: center;
+        }
     }
 
     &__list {
@@ -129,6 +148,11 @@
     &__input{
         margin-top: 50px;
         margin-bottom: 30px;
+
+        @media screen and (max-width: 768px){
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
     }
 
     &__area{

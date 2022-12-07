@@ -1,5 +1,5 @@
 <template>
-    <div class="col">
+    <div class="col-lg-3 col-md-6 col-sm-6">
         <h3 class="footer__title">For clients</h3>
         <ul class="footer__list">
             <li  v-for="(menu, index) in footerMenuClients" :key="index">

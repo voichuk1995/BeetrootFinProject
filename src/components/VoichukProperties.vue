@@ -1,6 +1,6 @@
 <template>
     <div class="row">
-        <div class="col-md-4 col-sm-12" v-for="(item, index) in productList" :key="index">
+        <div class="col-lg-4 col-md-6 col-sm-12 properties__col" v-for="(item, index) in productList.slice(0, 6)" :key="index">
             <div class="properties__cart cart">
                 <img :src="require(`../assets/images/propertis${item.image}`)" :alt="item.title" class="cart__img">
                 <h4 class="cart__title">{{ item.title }}</h4>

@@ -57,6 +57,14 @@ export default {
 }
 .logo{
 	padding-right: 180px;
+
+	@media screen and (max-width: 1399px){
+		padding-right: unset;
+	}
+	@media screen and (max-width: 1200px){
+		padding-right: 30px;
+	}
+	
 }
 .collapse-fontsize{
 	font-size: 18px;
@@ -67,6 +75,10 @@ export default {
 
 	&:hover{
 		background-color: $grey;
+	}
+
+	@media screen and (max-width: 1200px){
+		padding: 25px 10px;
 	}
 }
 

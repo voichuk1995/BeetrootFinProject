@@ -10,8 +10,8 @@ export default createStore({
         productList: [],
     },
     getters: {
-        PRODUCTS(state) {
-            return state.products;
+        productList(state) {
+            return state.productList;
         }
     },
     mutations: {
@@ -21,7 +21,7 @@ export default createStore({
     },
     actions: {
         async getProductList({ commit }) {
-            const url = `${baseUrl}products`;
+            const url = `${baseUrl}products/`;
             const products = await request(url);
             commit("setProductList", products);
         }

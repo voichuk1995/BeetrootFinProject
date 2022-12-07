@@ -6,6 +6,19 @@
         font-family: "Raleway";
         font-size: 37px;
         margin: 0;
+
+        @media screen and (max-width: 1200px){
+            font-size: 34px;
+        }
+        @media screen and (max-width: 1024px){
+            font-size: 30px;
+        }
+        @media screen and (max-width: 768px){
+            padding-bottom: 20px;
+        }
+        @media screen and (max-width: 480px){
+            font-size: 28px;
+        }
     }
 
     &__link{
@@ -24,6 +37,22 @@
             background-color: rgb(245, 100, 100);
             color: #FFFFFF;
         }
+
+        @media screen and (max-width: 1200px){
+            padding: 18px 15px;
+            font-size: 15px;
+        }
+        @media screen and (max-width: 1024px){
+            padding: 18px 12px;
+            font-size: 14px;
+            text-align: center;
+        }
     }
+
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        text-align: center;
+    }
+
 }
   

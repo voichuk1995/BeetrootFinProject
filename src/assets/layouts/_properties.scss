@@ -28,6 +28,14 @@
 		padding-bottom: 70px;
     }
 
+	&__col{
+
+		@media screen and (max-width: 768px){
+            display: flex;
+			justify-content: center;
+        }
+	}
+
     &__cart {
         border: 1px solid $grey3;
 		padding: 0;
@@ -53,6 +61,13 @@
 			background-color: rgb(245, 100, 100);
 		}
 	}
+
+	@media screen and (max-width: 991px){
+        padding: 70px 0;
+    }
+    @media screen and (max-width: 768px){
+        padding: 50px 0;
+    }
 }
 
 .cart {

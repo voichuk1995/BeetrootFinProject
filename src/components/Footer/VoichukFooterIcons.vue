@@ -1,5 +1,5 @@
 <template>
-    <div class="col">
+    <div class="col-lg-3 col-md-12 col-sm-12">
         <div class="footer__logo">
             <img class="footer__img" src="../../assets/images/icons/footer-logo.png" alt="footer-logo">
         </div>

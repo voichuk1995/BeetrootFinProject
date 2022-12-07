@@ -2,10 +2,20 @@
     background-color: $grey2;
     padding: 80px;
 
+    &__content{
+        text-align: center;
+    }
+
     &__title{
         font-size: 37px;
         font-family: "Raleway";
         line-height: 1.4;
+        padding-bottom: 15px;
+        margin: 0;
+
+        @media screen and (max-width: 576px){
+            font-size: 30px;
+        }
     }
 
     &__email{
@@ -17,7 +27,7 @@
         color: rgb(85, 74, 74);
         max-width: 385px;
         width: 100%;
-        margin-right: 20px;
+        margin-bottom: 15px;
     }
 
     &__link{
@@ -37,6 +47,10 @@
             background-color: rgb(245, 100, 100);
             color: #FFFFFF;
         }
+    }
+
+    @media screen and (max-width: 576px){
+        padding: 50px 15px;
     }
 }
 

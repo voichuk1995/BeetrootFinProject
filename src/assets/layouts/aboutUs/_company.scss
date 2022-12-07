@@ -1,7 +1,7 @@
 @import "./../extend";
 
 .company{
-    padding: 70px 0 100px 0;
+    padding: 70px 0 100px;
 
     &__nav-first{
         @extend .nav-first;
@@ -29,6 +29,10 @@
             max-height: 380px;
             height: 100%;
         }
+
+        @media screen and (max-width: 1200px){
+            padding-bottom: 25px;
+        }
     }
 
     &__text{
@@ -36,6 +40,17 @@
         line-height: 27px;
         color: #797979;
         font-weight: 400;
+
+        @media screen and (max-width: 992px){
+           text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 992px){
+        padding: 60px 0 80px;
+    }
+    @media screen and (max-width: 768px){
+        padding: 50px 0 60px;
     }
 
 }

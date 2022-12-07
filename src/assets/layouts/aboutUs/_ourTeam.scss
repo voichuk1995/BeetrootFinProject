@@ -6,6 +6,11 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 60px;
+
+        @media screen and (max-width: 768px){
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__title{
@@ -25,6 +30,13 @@
         &:hover{
             color: rgb(193, 121, 116);
         }
+    }
+
+    @media screen and (max-width: 768px){
+        padding: 70px 0;
+    }
+    @media screen and (max-width: 576px){
+        padding: 50px 0;
     }
 }
 
@@ -89,6 +101,10 @@
 
     &__text{
         margin: 0;
+    }
+
+    @media screen and (max-width: 576px){
+        margin: 12px auto;
     }
 }
 

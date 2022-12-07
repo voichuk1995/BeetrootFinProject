@@ -3,12 +3,12 @@
         <VoichukCarusel />
         <div class="container offering">
             <div class="row">
-                <div class="col-md-4 offering__border">
+                <div class="col-md-4 col-sm-12 offering__border">
                     <h3 class="offering__title">
                         We are Offering the Best Estate Deals
                     </h3>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8 col-sm-12">
                     <p class="offering__text">
                         Quisque diam lorem interdum vitaapibus ac scelerisque vitae pede. 
                         Donec eget tellus non erat lacinia fertum. Donec in velit vel ipsum auctovinar. 
@@ -77,7 +77,7 @@ export default {
         }
     },
     computed: {
-        ...mapGetters(["PRODUCTS"]), 
+        ...mapGetters(["productList"]), 
     },
     methods: {
         ...mapActions(["getProductList"]), 

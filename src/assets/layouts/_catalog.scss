@@ -93,6 +93,10 @@
 		font-size: 13px;
 		font-weight: bold;
         font-family: "Helvetica";
+
+        @media screen and (max-width: 1400px){
+            flex-direction: column;
+        }
     }
 
     &__item {
@@ -104,18 +108,33 @@
 			content: '';
 			position: absolute;
 			right: 5px;
-			top: 59%;
+			top: 50%;
 			transform: translateY(-50%);
 			width: 5px;
 			height: 5px;
 			border-radius: 50%;
 			background-color: $grey4;
+
+            @media screen and (max-width: 1400px){
+                right: 50%;
+                top: 25px;
+            }
 		}
 
 		&:last-child {
 			&::after {
 				content: none;
 			}
+
+            @media screen and (max-width: 1400px){
+                padding-bottom: unset;
+            }
+
 		}
+
+        @media screen and (max-width: 1400px){
+            padding-right: unset;
+            padding-bottom: 15px;
+        }
     }
 }

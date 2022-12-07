@@ -18,12 +18,50 @@
             background-color: $red;
             left: 0;
             bottom: -40px;
+
+            @media screen and (max-width: 1199px){
+                bottom: -20px;
+            }
+            @media screen and (max-width: 991px){
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 1399px){
+            transform: translate(-115px, 70px);
+        }
+        @media screen and (max-width: 1199px){
+            transform: translate(-25px, 70px);
+        }
+        @media screen and (max-width: 991px){
+            font-size: 30px;
+            transform: translate(-92px, 35px);
+        }
+        @media screen and (max-width: 768px){
+            transform: unset;
+            transform: translate(-50%);
+            padding-top: 20px;
         }
     }
 
     &__indicators{
         top: 38px;
         left: 160px;
+
+        @media screen and (max-width: 1399px){
+            left: 360px;
+        }
+        @media screen and (max-width: 1199px){
+            left: 540px;
+        }
+        @media screen and (max-width: 991px){
+            left: 250px;
+            top: 10px;
+        }
+        @media screen and (max-width: 768px){
+            left: 0;
+            top: 15px;
+        }
     }
 
     &__dotted{
@@ -49,6 +87,14 @@
         max-height: 467px;
         height: 100%;
         min-width: 344px;
+
+        @media screen and (max-width: 991px){
+            min-width: 225px;
+            max-height: 318px;
+        }
+        @media screen and (max-width: 768px){
+            display: none;
+        }
     }
 
     &__content{
@@ -57,6 +103,13 @@
         flex-direction: column;
         justify-content: flex-end;
 
+        @media screen and (max-width: 991px){
+            padding: 50px 0 20px 30px;
+        }
+        @media screen and (max-width: 768px){
+            padding: 50px 0 20px;
+        }
+
     }
 
     &__title{
@@ -64,6 +117,11 @@
         font-weight: bold;
         padding-bottom: 35px;
         margin: 0;
+
+        @media screen and (max-width: 991px){
+            font-size: 22px;
+            padding-bottom: 10px;
+        }
     }
 
     &__text{
@@ -71,12 +129,28 @@
         width: 100%;
         padding-bottom: 40px;
         color: $grey4;
+
+        @media screen and (max-width: 991px){
+            padding-bottom: 10px;
+            font-size: 16px;
+        }
     }
 
     &__list{
         list-style-type: none;
         display: flex;
         padding: 0;
+
+        @media screen and (max-width: 991px){
+            flex-direction: column;
+        }
+
+        @media screen and (max-width: 768px){
+            justify-content: center;
+        }
+        @media screen and (max-width: 480px){
+            flex-direction: column;
+        }
     }
 
     &__icon{
@@ -99,5 +173,10 @@
         &:hover{
             color: $red;
         }
+    }
+
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        text-align: center;
     }
 }

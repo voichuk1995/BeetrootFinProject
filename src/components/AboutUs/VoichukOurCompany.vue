@@ -5,12 +5,12 @@
             <router-link class="company__nav-last" aria-current="page" :to="headerMenuList[1].path">About Us</router-link>
             <h2 class="company__title">About <strong>Our Company</strong></h2>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-xl-6 col-lg-7">
                     <div class="company__image">
                         <img src="../../assets/images/aboutUs/pic.png" alt="">
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-xl-6 col-lg-12">
                     <p class="company__text">Quisque diam lorem interdum vitaapibus ac scelerisque vitae pede. 
                         Donec eget tellus non erat lacinia fertum. Donec in velit vel ipsum auctovinar. 
                         Proin umcorper urna et felisstibulum iaculis lacinia est. 

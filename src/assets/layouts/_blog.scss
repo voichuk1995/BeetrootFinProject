@@ -9,9 +9,22 @@
         @extend .nav-last;
     }
 
+    &__content{
+
+        @media screen and (max-width: 768px){
+            flex-direction: column-reverse;
+        }
+    }
+
     &__cartlist{
         padding: 0 50px 0 12px;
         border-right: 1px solid rgb(240, 244, 245);
+
+        @media screen and (max-width: 768px){
+            text-align: center;
+            padding: 0;
+            border: none;
+        }
     }
 
     &__cart {
@@ -24,6 +37,10 @@
         &:last-child{
             margin-bottom: 50px;
         }
+
+        @media screen and (max-width: 768px){
+            margin-bottom: 20px;
+        }
     }
 
     &__title {
@@ -31,6 +48,10 @@
         font-family: "Raleway";
         color: rgb(60, 60, 60);
         margin-bottom: 40px;
+
+        @media screen and (max-width: 992px){
+            font-size: 40px;
+        }
     }
 
     &__image {
@@ -60,6 +81,21 @@
     &__filter {
         padding-left: 50px;
         font-family: "Raleway";
+
+        @media screen and (max-width: 768px){
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding-left: unset;
+            text-align: center;
+            padding: 0 0 20px;
+        }
+
+        & div{
+            @media screen and (max-width: 768px){
+                padding: 0 25px;
+            }
+        }
     }
 
     &__categories{
@@ -79,5 +115,21 @@
     &__item {
         margin-bottom: 17px;
         cursor: pointer;
+
+        @media screen and (max-width: 576px){
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        padding: 50px 15px 70px;
+    }
+}
+
+
+.pagination-blog{
+    @media screen and (max-width: 768px){
+        justify-content: center;
     }
 }

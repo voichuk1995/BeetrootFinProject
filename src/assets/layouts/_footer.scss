@@ -8,12 +8,21 @@
 
     &__logo{
         padding-bottom: 20px;
+
+        @media screen and (max-width: 768px){
+            text-align: center;
+        }
     }
 
     &__socials{
         margin: 0;
         padding: 0;
-        display: flex; 
+        display: flex;
+        
+        @media screen and (max-width: 992px){
+            justify-content: center;
+            padding-bottom: 35px;
+        }
     }
 
     &__social{
@@ -56,5 +65,10 @@
             color: $red;
         }
 
+    }
+
+    @media screen and (max-width: 992px){
+        padding: 60px 0 60px; 
+        text-align: center;
     }
 }

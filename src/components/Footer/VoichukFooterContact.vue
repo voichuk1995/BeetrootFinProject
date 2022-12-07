@@ -1,5 +1,5 @@
 <template>
-    <div class="col">
+    <div class="col-lg-3 col-md-12 col-sm-12">
         <h3 class="footer__title">Contact us</h3>
         <ul class="footer__list">
             <li>240 Central Park, London OR 10019</li>

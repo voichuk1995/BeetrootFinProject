@@ -25,8 +25,8 @@
 import VoichukPropertiesCatalog from "../components/VoichukPropertiesCatalog.vue";
 import paginationMixin from "../assets/mixins/pagination.mixin.js";
 import Paginate from "../../node_modules/vuejs-paginate/src/components/Paginate.vue";
-import { propertiesData } from "../data/data.all";
 import { menuList } from "../constants/menuLinks";
+import { mapGetters, mapActions } from "vuex";
 
 export default {
     name: "VoichukProperties",
@@ -37,7 +37,6 @@ export default {
     mixins: [paginationMixin],
     data() {
         return {
-            propertiesData: propertiesData,
             headerMenuList: menuList,
             category: [
                 {name: "ALL", value: "ALL"},
@@ -48,21 +47,23 @@ export default {
         }
     },
     computed: {
+        ...mapGetters(["productList"]), 
         sortProperties() {
             if (this.items.length) {
 
                 return this.items; 
                  
             } else {
-                return this.propertiesData
-            }
+                return this.productList;
+            };
         },
     },
     methods: {
+        ...mapActions(["getProductList"]),
         filterByCategory(category){
             this.items = [];
             
-            this.propertiesData.map((item) => {
+            this.productList.map((item) => {
 
                 if (item.category === category){
                     this.items.push(item);      
@@ -76,6 +77,8 @@ export default {
         },
     },
     mounted() {
+        this.getProductList();
+
         this.setupPagination(this.sortProperties.map(product => {
             return {
                 ...product

@@ -70,6 +70,10 @@
 }
 .carousel-indicators{
     bottom: 280px;
+
+    @media screen and (max-width: 768px){
+        bottom: 10px;
+    }
 }
 .hero__title{
     font-size: 48px;
